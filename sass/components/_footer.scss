@@ -1,0 +1,124 @@
+.footer {
+  background-color: var(--header-footer-bg-color);
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.footer-container {
+  display: flex;
+  align-items: baseline;
+}
+.address-box {
+  margin-right: 70px;
+}
+
+.logo_change_white {
+  color: var(--white-text-color);
+}
+.address {
+  margin-top: 20px;
+  font-style: normal;
+}
+
+.link-address {
+  color: var(--white-text-color);
+  line-height: 1.71;
+  transition: color var(--transition-dur-fun);
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+}
+
+.contacts-item {
+  margin-top: 9px;
+}
+.link-contacts {
+  color: var(--footer-contacts-color);
+  line-height: 1.71;
+  transition: color var(--transition-dur-fun);
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+}
+
+.social-text-footer {
+  margin-bottom: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--white-text-color);
+}
+
+.social-link-footer {
+  @extend %align;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: var(--link-icon-footer-color);
+  fill: var(--white-text-color);
+  transition: background-color var(--transition-dur-fun);
+  &:hover,
+  &:focus {
+    background-color: var(--accent-color);
+  }
+}
+
+.subscription-footer {
+  margin-left: auto;
+}
+
+.subscription-text-footer {
+  margin-bottom: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--white-text-color);
+}
+.form-footer {
+  display: flex;
+}
+
+.form-email-footer {
+  margin-right: 12px;
+  width: 360px;
+  height: 50px;
+  padding: 15px;
+  background-color: var(--header-footer-bg-color);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  &::placeholder {
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.03em;
+
+    color: rgba(255, 255, 255, 0.6);
+  }
+}
+
+.subscrip-btn {
+  display: flex;
+  align-items: center;
+  width: 200px;
+  height: 50px;
+  padding: 10px 28px;
+  @include font(16px, 700);
+  line-height: 1.88;
+
+  letter-spacing: 0.06em;
+  color: var(--white-text-color);
+  background-color: var(--accent-bg-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border: var(--accent-color);
+  border-radius: 4px;
+}
+.form-button-box-footer {
+  position: relative;
+}
+.button-icon-footer {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 28px;
+
+  fill: var(--basic-bg-color);
+}
